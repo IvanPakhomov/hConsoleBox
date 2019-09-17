@@ -73,7 +73,9 @@ export class ConsoleBox {
       output += `║`;
     }
 
-    output += "\n";
+    if (!end) {
+      output += "\n";
+    }
 
     return output;
   }
